@@ -1,0 +1,426 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none ; /* pas de liste */
+   border: none;
+   box-sizing: border-box;
+   outline: none; /* pas compris */
+   scroll-behavior: smooth; /* pas compris */
+   color: var(--text);
+  font-family: sans-serif; 
+  border: none;
+  outline: none;
+  scroll-behavior: smooth; /* Permet un défilement doux vers les ancres */
+  font-family: sans-serif;
+}
+
+ 
+html {
+   font-size: 62.5%; /* 1rem = 10px (pour simplifier les calculs) */
+   overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+body {
+   background-color: var(--bg-color);
+   color: var(--text);
+}
+
+.bgAnime video{
+background-position: center;
+background-size: cover;
+object-fit: cover;
+    position: fixed;
+     top: 0;
+     left: 0;
+     width:100vw;
+     height: 100vh;
+     z-index: -1;
+     background-color: transparent; /* Fond transparent */
+     outline: none; /* Enlève le contour si cliqué */
+
+      /* Centrage absolu  */
+    min-width: 100%;
+    min-height: 100%;
+   
+}
+
+
+:root{
+   --bg-color:white (245, 236, 236, 0.74);
+   --film: rgba(20, 18, 18, 0.447);
+
+   --text-bg-color: black;
+   --main-color : rgba(206, 74, 98, 0.541);
+   --text : rgb(255, 255, 255);
+}
+html {
+   font-size: 60%;
+   overflow-x: hidden;/* pas compris */
+}
+
+body {
+   background-color: var(--bg-color);
+   color : var(--text-bg-color) /* le menu à disparu */
+}
+
+/*######################################## */
+/*############ header  ################### */
+/*######################################## */
+
+section{
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+}
+
+
+.header{
+   padding: 2rem 5%;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   right: 0;
+   Z-index: 1000;
+   display: flex;
+   align-items: center;  /* le menu à disparu */
+   justify-content: space-between;
+   background-color: var(--main-color);
+   padding: 2rem 5%;
+   backdrop-filter: blur(10px); /* pas compris */
+   transition: all 0.5s ease;
+}
+.logo {
+   font-size: 3rem;
+   color : var(--bg-color);
+   transition: 0.5s ease;
+}
+.logo:hover{
+   transform: scale(1.05);
+}
+
+.navbar {
+   display: flex;
+   column-gap: 10rem;
+}
+.navbar a {
+   font-size: 1.9rem;
+   color : var(--bg-color);
+   transition: 0.2s ease;    
+}
+
+.navbar li {
+  position: relative;    
+}
+
+.navbar a::after {
+   content: "";
+   width: 0%;
+   height: 2px;
+   bottom : -4px;
+   left: 0;
+   background: var(--text-bg-color);
+   position: absolute;
+   transition:.4s ease-in-out;
+}
+.navbar a:hover, a.active /* pour le survol du lien et du lien activé */
+{
+  color: var(--text-bg-color) ;
+}
+
+.navbar a:hover,  .navbar a:active {
+  color : var(--bg-color)
+}
+.navbar a:hover::after, a.link-active::after {
+  width: 100%;
+  }
+ 
+
+#menu-icon {
+   font-size: 3rem;
+   color: var(--text);
+}
+
+#menu-icon {
+   display: none; /* Caché par défaut */
+}
+
+@media (max-width: 768px) {
+   .navbar {
+      display: none; /* Cache la nav sur mobile */
+   }
+   #menu-icon {
+      display: block; /* Affiche l'icône menu */
+   }
+}
+
+/*######################################## */
+/*############ accueil  ################### */
+/*######################################## */
+
+.Accueil {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+}
+
+#Accueil {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.accueil-content{
+   margin: 5em auto;
+   padding: 3em;
+   background: var(--film);
+   border-radius: 15px;
+   border: outset var(--main-color);
+   max-width:90%;
+
+}
+
+
+.accueil-content h3{
+  padding: 5px;
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+
+.accueil-content span {
+   color : var(--main-color)
+}
+
+.accueil-content h1 {
+   font-size: 3.5rem;
+   font-weight: 700;
+}
+
+.accueil-content p {
+   font-size: 2rem;
+   display: inline-flex;
+}
+
+.social-media a {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 42px;
+   height: 50px;
+   border-radius: 50%;
+   border: 0.4rem solid var(--main-color);
+   margin: 3rem 1.5rem;
+   background: var(--bg-color);
+   color: var(--main-color);
+
+
+}
+
+.social-media a:hover{
+   background: var(--main-color);
+}
+
+.accueil-content span{
+   color: var();
+}
+ /*######################################## */
+/*############ Parcours  ################### */
+/*######################################## */
+
+.Parcours {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#Parcours {
+   /* height: 100vh; */
+   max-width: 100vw;
+   background-position: center;
+   background-size: cover;
+   padding: 15rem auto;
+}
+
+.container-Parcours{
+  margin: 0 ;
+   padding: 5em;
+   background: var(--film);
+   border-radius: 15px;
+   border: var(--main-color) solid;
+   border: outset var(--main-color);
+  width: 80vw;
+ 
+}
+
+.container-Parcours h2{
+  padding: 5px;
+  font-size: 3rem;
+ 
+}
+
+.container-Parcours p {
+  padding: 10px;
+  font-size: 2rem;
+   display: inline-flex
+
+}
+
+
+ /*######################################## */
+/*############ Compétences  ################### */
+/*######################################## */
+
+
+
+.container-Compétences{
+  margin: 5rem;
+   padding: 100px;
+   background: var(--film);
+   border-radius: 15px;
+}
+
+.tab-Compétences{
+  padding: 10px;
+  display: flex;
+  margin: 5px ;
+}
+.tab-links{
+  padding: 5px;
+  position: relative;
+  margin-right: 50px;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;  
+
+}
+.tab-links::after{
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition:.4s ease-in-out;
+ 
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+/* le container des compétence */
+.tab-contents  {
+  padding: 10px;
+  margin-bottom: 10px; 
+  font-size: 2rem;
+}
+
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+ /*######################################## */
+/*############ Projets  ################### */
+/*######################################## */
+
+#Projet {
+   /* height: 100vh; */
+   max-width: 100%;
+   justify-content: center;
+justify-items: center;
+
+}
+
+.tab-projet {
+ /* padding: 10px; */
+ margin: 10px;
+ display: flex;
+}
+
+.container-projet{
+   margin: 5rem;
+}
+/* le container projets */
+.tab-contents-projets {
+   padding: 10px;
+   margin-bottom: 10px; 
+   font-size: 2rem;
+   display: none;
+ }
+ 
+ 
+ .tab-contents-projets.active-tab-projet{
+   display: flex;
+ }
+.projet{
+   display: grid;
+   background: var(--film);
+   margin: 10px ;
+   gap: 2rem;
+   padding: 2rem;
+   border-radius: 7px;
+   max-width: 100vw; ;
+   /* height: 40vh; */
+   transition: transform .5s ease;
+   
+}
+
+.projet:hover{
+   transform: translateY(-15px);
+   border: var(--main-color) solid;
+}
+
+.buttonProjet{
+  justify-content: center;
+   padding: 10px;
+   max-width: 100%;
+   background-color: var(--main-color);
+   margin: 10px;
+   border-radius: 15px;
+   transition: background .2s ease-in-out ;/* lorsqu'on clique*/
+   cursor: pointer;
+   flex-grow: 1;
+   
+}
+.buttonProjet {
+   justify-items: center;
+   text-align: center;
+} 
+
+
+.buttonProjet:hover{
+   background-color: var(--main-color);
+}
+
+
+/* #######  footer ########### */
+
+footer {
+   
+   padding:1rem;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0;
+   display: fLex;
+   border-top: 2px solid var(--text-bg-color);
+
+   
+}
+
+.copy {
+   text-align: center;
+   font-size: 600;
+   padding: 1rem;
+   
+   }
+   /*############ Responsive ###############"  */
+
+ 
+   
+ 
+
+  

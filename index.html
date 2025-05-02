@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" >
+    <title>Portfolio -Elisabeth AKAKPO</title>
+</head>
+<body>
+
+
+    <div class ="bgAnime" >
+        <video autoplay muted loop playsinline>
+        <source src="/2759484-uhd_3840_2160_30fps.mp4">
+    </div>
+
+
+<!-- ###################### header ############################ -->
+    <header class="header">
+
+        <a href="#Home" class="logo">Elisabeth AKAKPO</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class = "navbar">
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#Parcours">Parcours</a></li>         
+            <li><a href="#Projet">Projets </a></li>
+           
+    </header>
+
+<!-- ###################### accueil  ############################ -->
+    <section class = "Accueil" id ="Accueil">
+        
+        <div class = "accueil-content">
+           <h1  class="multiple" ></h1>
+            
+            <p> Actuellement en deuxième année de cycle preparatoire integrée je suis juste une
+                etudiante full-stack de motivation, qui cherche une alternance en Developpement logiciel
+                pour mon cursus ingénieur de 3ans afin de deployer ses compétences pour d'initialiser sa carriere  </p>
+
+                <div class="social-media">
+                 <a href="https://www.linkedin.com/in/elisabeth-akakpo/"><i class='bx bxl-linkedin'></i></a>
+                 <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- ###################### Parcours ############################ -->
+
+<section class= "Parcours" id="Parcours">
+
+        <div class="container-Parcours">
+            <h2> Parcours</h2>
+            <p>
+                je suis en deuxième année de cycle préparatoire intégré au CESI (Centre d’Etude Supérieur Industrielle) 
+                en mineure informatique.Au cours de ma formation j'ai réaliser des projets en système embarqué,
+                en conception et programmation objet C++, en réseaux et systèmes et développement web. j'ai aussi descours 
+                de mathématiques et d'anglais.
+            </p>
+<!-- ###################### Compétences  ############################ -->
+            <h2> Compétences</h2>
+            <div class="tab-Compétences">
+                
+                <p class="tab-links active-link" onclick ="opentab('hard-skills')"> Hard-skills </p> 
+                <p class="tab-links" onclick = "opentab('soft-skills')"> Soft-skills </p>
+            </div>
+
+             <div class="tab-contents active-tab" id="hard-skills">
+                 <ul>
+                    <li>Connaissances de langages de programmation : HTML, CSS, JavaScript, PHP, C/C++, Python</li>	
+                    <li>Outils de gestion de base de  données : MySQL</li>	
+                    <li>Outils et environnements de développement : Visual Studio Code, Oracle VirtualBox, Cisco Packet Tracer et Tinkercad</li>	
+                
+                    <li> Bureautique : Pack office </li>
+                    </ul>
+            </div>
+
+                <div class="tab-contents" id="soft-skills">
+                    <ul>
+                    <li>Adaptabilité</li>	
+                    <li>Autonomie</li>
+                    <li>Curiosité intellectuelle</li>
+                    <li>Esprit d’initiative</li>
+                    <li>Esprit d’équipe</li>
+                    <li>Créativité</li>
+                    </ul>
+                    
+                </div>
+                                 
+        </div>
+       
+    </section>
+
+<!-- ###################### Projets  ############################ -->
+
+<section class ="Projet" id="Projet">
+ 
+    <div class="tab-projet container-projet">
+        <p class="tab-links active-link" id ='Projet-scolaire'>Projets scolaires</p>
+        <p class="tab-links" id ='Projet-personnel'>Projets personnels</p>
+    </div>
+    
+             <!-- ########## Projets scalaires  ############# -->
+
+<div class="  tab-contents-projets active-tab-projet " id="ProjetScolaire" >
+
+    <div class="projet">
+        <h1>Le Jeu de la Vie (orientée Objet)</h1>
+    
+        <p>Le Jeu de la Vie est un automate cellulaire où des cellules vivent/mourissent
+             selon des règles simples, créant des motifs évolutifs. Codé en C++ elle doit respecter les principe
+              de l'orientée objet
+            <div class ="buttonProjet" >      
+                <a href="https://elisaaabeth.github.io/boite-film/">EN SAVOIR PLUS</a>            
+            </div>
+    </div>
+
+    <div class="projet">
+        <h1>Site Web de recherche de stage (developpement Web) </h1>
+        <p>C'est un site dévéloppé avec HTML, CSS et JavaScript pour l'interface frontend, avec une expérience utilisateur dynamique.
+             Le backend utilise MySQL pour la gestion des données et Laravel (framework PHP) pour orchestrer les requêtes
+              vers la base de données.  </p>
+             <div class ="buttonProjet" >      
+                <a href="https://github.com/elisaaabeth/WebForAll_Project">EN SAVOIR PLUS</a>            
+            </div>
+    </div>
+
+
+    <div class="projet">
+        <h1>STATION METEO (Système embarqué) </h1>
+        <p>
+            C'est un système concu avec une carte Arduino qui interagit avec différents composants 
+            extérieurs, gère des données de différents capteurs et possède différents modes de 
+            fonctionnement. </p>
+            <div class ="buttonProjet" >      
+                <a href="https://github.com/elisaaabeth/WebForAll_Project">EN SAVOIR PLUS</a>            
+            </div>
+    </div>
+
+</div>
+
+     
+         <!-- ########## Projets Personnels  ############# -->
+<div class=" tab-contents-projets" id='ProjetPersonnel'>
+
+    <div class="projet">
+        <h1>Page Site de film statique</h1>
+        <p>Afin de savoir manipuler les langages balisage HTML et le langage de mise en forme CSS,
+            j'ai realiser une page statique de recherche de film .</p>
+            <div class ="buttonProjet" >      
+                <a href="https://github.com/elisaaabeth/WebForAll_Project">EN SAVOIR PLUS</a>            
+            </div>
+        
+    </div>
+
+    <div class="projet">
+        <h1>mini jeu</h1>
+        <p>il s'agit d'un petit programme de jeu realisé en JavaScript avec les langage de mise en forme 
+            et de balisage HTML/CSS que j'ai réaliser pour apprendre les base du JavaScript.</p>
+            <div class ="buttonProjet" >      
+                <a href="https://github.com/elisaaabeth/WebForAll_Project">EN SAVOIR PLUS</a>            
+            </div>
+    </div>
+
+
+    <div class="projet">
+        <h1>Projet</h1>
+        <p> C'est un petit site de recette que j'ai realiser pour apprendre à manipuler le langage serveur Php </p>
+        <div class ="buttonProjet" >      
+            <a href="https://github.com/elisaaabeth/WebForAll_Project">EN SAVOIR PLUS</a>            
+        </div>
+    </div>
+
+    </div>
+
+
+       
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script src="/script.js">
+</script>
+
+    
+    
+</body>
+</html>
