@@ -52,7 +52,7 @@ object-fit: cover;
 
    --text-bg-color: black;
    --main-color : rgba(206, 74, 98, 0.541);
-   --text : rgb(255, 255, 255);
+   --text : black;
 }
 html {
    font-size: 60%;
