@@ -16,11 +16,12 @@ function opentab(tabname) {
 // animation
 const typed = new Typed(".multiple", {
   strings: ["Bonjour, Je suis elisabeth^100"],
-  typeSpeed: 100,
-
-  startSpeed: 1000,
-  backDelay: 100,
+  typeSpeed: 50,
+  startSpeed: 10,
+  backDelay: 10,
 });
+
+// block projet
 const projetScolaire = document.getElementById("Projet-scolaire");
 const projetPersonnel = document.getElementById("Projet-personnel");
 const contenuScolaire = document.getElementById("ProjetScolaire");
@@ -46,4 +47,17 @@ projetPersonnel.addEventListener("click", function () {
   contenuScolaire.classList.remove("active-tab-projet");
 });
 
-openProjet(ta);
+// menu burguer
+
+const icone = document.querySelector(".navbar-mobile i");
+const modal = document.querySelector(".modal");
+const id = document.getElementById("id");
+console.log(icone, "ok");
+console.log(modal, "ok");
+
+icone.addEventListener("click", function () {
+  console.log(icone, "ok");
+  modal.classList.toggle("change");
+  icone.classList.toggle("bx-x");
+});
+console.log("ok");

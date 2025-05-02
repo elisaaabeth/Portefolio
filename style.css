@@ -8,11 +8,8 @@
    outline: none; /* pas compris */
    scroll-behavior: smooth; /* pas compris */
    color: var(--text);
-  font-family: sans-serif; 
-  border: none;
-  outline: none;
-  scroll-behavior: smooth; /* Permet un défilement doux vers les ancres */
-  font-family: sans-serif;
+   font-weight: 400;
+ 
 }
 
  
@@ -21,10 +18,6 @@ html {
    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
-body {
-   background-color: var(--bg-color);
-   color: var(--text);
-}
 
 .bgAnime video{
 background-position: center;
@@ -51,17 +44,19 @@ object-fit: cover;
    --film: rgba(20, 18, 18, 0.447);
 
    --text-bg-color: black;
-   --main-color : rgba(206, 74, 98, 0.541);
+   --main-color : purple;
    --text : black;
 }
 html {
    font-size: 60%;
    overflow-x: hidden;/* pas compris */
+   font-weight: 400;
 }
 
 body {
    background-color: var(--bg-color);
-   color : var(--text-bg-color) /* le menu à disparu */
+   color : var(--text-bg-color); /* le menu à disparu */
+   background: rgba(248, 208, 221, 0.751);
 }
 
 /*######################################## */
@@ -135,23 +130,49 @@ section{
   }
  
 
-#menu-icon {
-   font-size: 3rem;
-   color: var(--text);
-}
 
-#menu-icon {
-   display: none; /* Caché par défaut */
-}
 
-@media (max-width: 768px) {
-   .navbar {
-      display: none; /* Cache la nav sur mobile */
-   }
-   #menu-icon {
-      display: block; /* Affiche l'icône menu */
-   }
-}
+/*######################################## */
+/*############ header mobile ################### */
+/*######################################## */
+
+
+  .navbar-mobile i{
+      position: fixed;
+      right: 15px;
+      top:9px;
+      font-size: 5rem;
+      z-index: 9999;
+  }
+  .navbar-mobile .navbar-mobile-list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .navbar-mobile .navbar-mobile-list a{
+      color: black;
+      font-size: 3rem;
+      font-weight: 400;
+  }
+  
+  .modal{
+      background-color: purple;
+      top:-100vh;
+      left: 0;
+      width: 100%;
+      position: fixed;
+      height: 20vh;
+      opacity: 0,9;
+  }
+  
+  .change{
+      top: 0;
+      transition: .9s;
+      
+  }
+
 
 /*######################################## */
 /*############ accueil  ################### */
@@ -190,7 +211,9 @@ section{
 
 
 .accueil-content span {
-   color : var(--main-color)
+   color : var(--text);
+   ;
+ 
 }
 
 .accueil-content h1 {
@@ -201,6 +224,9 @@ section{
 .accueil-content p {
    font-size: 2rem;
    display: inline-flex;
+}
+.accueil-content strong{
+   font-size: 2rem ;
 }
 
 .social-media a {
@@ -418,7 +444,17 @@ footer {
    
    }
    /*############ Responsive ###############"  */
-
+  
+   @media screen and (max-width: 700px) {
+      .navbar{
+          display: none;
+      }
+      .navbar-mobile{
+          display: block;
+      }
+      
+  }
+  
  
    
  
