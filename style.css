@@ -58,7 +58,7 @@ html {
 body {
    
    color : var(--text-bg-color); /* le menu à disparu */
-   background:url('/jei-lee-8RrWeI2OPEs-unsplash.jpg');
+   background:url('image/jei-lee-8RrWeI2OPEs-unsplash.jpg');
    background-position: center;
 background-size: cover;
 object-fit: cover;
