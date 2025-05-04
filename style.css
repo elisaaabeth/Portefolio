@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 *{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    margin: 0;
    padding: 0;
    text-decoration: none;
@@ -44,7 +46,7 @@ object-fit: cover;
    --film: rgba(20, 18, 18, 0.447);
 
    --text-bg-color: black;
-   --main-color : purple;
+   --main-color : rgba(169, 0, 169, 0.55);
    --text : black;
 }
 html {
@@ -54,9 +56,17 @@ html {
 }
 
 body {
-   background-color: var(--bg-color);
+   
    color : var(--text-bg-color); /* le menu à disparu */
-   background: rgba(248, 208, 221, 0.751);
+   background:url('/jei-lee-8RrWeI2OPEs-unsplash.jpg');
+   background-position: center;
+background-size: cover;
+object-fit: cover;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     background-color: transparent; /* Fond transparent */
+     outline: none; /* Enlève le contour si cliqué */
 }
 
 /*######################################## */
@@ -354,7 +364,7 @@ section{
 /*######################################## */
 
 #Projet {
-   /* height: 100vh; */
+   height: 100vh auto;
    max-width: 100%;
    justify-content: center;
 justify-items: center;
@@ -365,10 +375,12 @@ justify-items: center;
  /* padding: 10px; */
  margin: 10px;
  display: flex;
+ height: 100vh auto;
 }
 
 .container-projet{
    margin: 5rem;
+   
 }
 /* le container projets */
 .tab-contents-projets {
@@ -452,6 +464,9 @@ footer {
       .navbar-mobile{
           display: block;
       }
+      .tab-contents-projets.active-tab-projet{
+         display: block;
+       }
       
   }
   

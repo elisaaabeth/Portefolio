@@ -15,7 +15,7 @@ function opentab(tabname) {
 
 // animation
 const typed = new Typed(".multiple", {
-  strings: ["Bonjour, Je suis elisabeth^100"],
+  strings: ["Bonjour, je suis Elisabeth^10"],
   typeSpeed: 50,
   startSpeed: 10,
   backDelay: 10,
